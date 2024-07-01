@@ -1,10 +1,10 @@
 import React from 'react';
+import logoImg from '../../assets/Logo.png';
 
-const Logo = (props) => {
-  const { img } = props;
+const Logo = () => {
   return (
     <div className="flex items-center h-16">
-      <img src={img} alt="Logo" className="h-full" />
+      <img src={logoImg} alt="Logo" className="h-full" />
     </div>
   );
 };

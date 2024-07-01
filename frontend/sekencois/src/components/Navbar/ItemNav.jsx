@@ -2,8 +2,8 @@ import React from 'react';
 
 const NavItem = ({ icon, alt }) => {
   const iconStyle = {
-    fontSize: '14px', // Ukuran font untuk memperbesar ikon
-    fontWeight: 'extrabold', // Menambahkan ketebalan pada ikon
+    fontSize: '14px', 
+    fontWeight: 'extrabold',
   };
   return (
     <div className="py-4 px-4 m-2 cursor-pointer duration-300 hover:text-[#33a49d]" style={iconStyle}>

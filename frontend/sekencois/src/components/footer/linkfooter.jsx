@@ -5,7 +5,7 @@ const FooterLinkSection = ({ navItems }) => {
     <div className="flex flex-col text-white py-4">
       <div className="flex flex-col space-y-2">
         {navItems.map(item => (
-          <a key={item.id} href={`/${item.text}`} className="text-lg text-white hover:text-gray-400">
+          <a key={item.id} href={`/${item.link}`} className="text-lg text-white hover:text-gray-400">
             {item.text}
           </a>
         ))}

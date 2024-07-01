@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { FaRegBell, FaCartShopping, FaCircleQuestion, FaBars } from "react-icons/fa6";
-import { FaTimes } from "react-icons/fa";
+import { FaCartShopping, FaBars } from "react-icons/fa6";
+import { IoNotifications } from "react-icons/io5";
+import { FaShopify, FaTimes } from "react-icons/fa";
 import Logo from './logo';
 import Button from '../elements/button';
 import NavItem from './ItemNav';
@@ -34,14 +35,14 @@ const Navbar = () => {
   }, [lastScrollTop]);
 
   const navItems = [
-    { id: 1, icon: <FaRegBell />, alt: 'Notifikasi', link: '/notifikasi' },
-    { id: 2, icon: <FaCircleQuestion />, alt: 'Bantuan', link: '/bantuan' },
+    { id: 1, icon: <FaShopify />, alt: 'Belanja', link: '/shop' },
+    { id: 2, icon: <IoNotifications />, alt: 'Notifikasi', link: '/notifikasi' },
     { id: 3, icon: <FaCartShopping />, alt: 'Keranjang', link: '/keranjang' },
   ];
 
   return (
     <nav className={`bg-white flex justify-between items-center h-16 px-12 shadow-md fixed top-0 left-0 right-0 z-10 transition-transform duration-300 ${isScrollingUp ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
-      <Logo img={'./img/Logo.png'} />
+      <Logo img={'../../public/img/Logo.png'} />
 
       <div className="hidden md:flex">
         <div className='flex'>
