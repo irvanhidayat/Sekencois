@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { RxDotFilled } from 'react-icons/rx';
+import carousel1 from '/src/assets/carousel1.jpg'
+import carousel2 from '/src/assets/carousel2.jpg'
+import carousel3 from '/src/assets/carousel3.png'
 
 function Banner() {
   const slides = [
-    { url: '/src/assets/carousel1.jpg' },
-    { url: '/src/assets/carousel2.jpg' },
-    { url: '/src/assets/carousel3.png' },
+    { url: carousel1 },
+    { url: carousel2 },
+    { url: carousel3 },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
