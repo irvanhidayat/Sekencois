@@ -3,9 +3,9 @@ import { RxDotFilled } from 'react-icons/rx';
 
 function Banner() {
   const slides = [
-    { url: 'img/carousel1.jpg' },
-    { url: 'img/carousel2.jpg' },
-    { url: 'img/carousel3.png' },
+    { url: '/src/assets/carousel1.jpg' },
+    { url: '/src/assets/carousel2.jpg' },
+    { url: '/src/assets/carousel3.png' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

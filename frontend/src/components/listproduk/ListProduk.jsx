@@ -2,9 +2,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Image1 from '/public/img/sepatu1.jpg';
-import Image2 from '/public/img/kemeja.jpg';
-import Image3 from '/public/img/sepatu1.jpg';
+import Image1 from '/src/assets/sepatu1.jpg';
+import Image2 from '/src/assets/kemeja.jpg';
+import Image3 from '/src/assets/sepatu1.jpg';
 
 const categories = [
   { name: 'Women', image: Image1, link: '/women' },
